@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body  {
+    font-family: 'Arial' , sans-serif;
+    background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01959082-cb72-4c7e-8da9-fe78734c937b/d69p77p-cbd5511e-8a99-4757-a066-8ad01a3d9415.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMDE5NTkwODItY2I3Mi00YzdlLThkYTktZmU3ODczNGM5MzdiXC9kNjlwNzdwLWNiZDU1MTFlLThhOTktNDc1Ny1hMDY2LThhZDAxYTNkOTQxNS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Wb7QJEfbtktGhhsw6koGHqj-CozgSA4XQ-vnmo4ODOs);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:cover cover
+}
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content:space-between;
+    opacity:1.0;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.6rem;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(255, 0, 191);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    }
+    a.active,a:hover{
+        background:rgb(255, 123, 0);
+        transition:.4s;
+    }
+    span a{
+    position:relative;
+    display:inline-block;
+    padding:15px 30px;
+    color:black;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:24px;
+    overflow:hidden;
+    transition:0.2s;
+    border-color:black;
+}
+    span{
+        background-image:url("https://vignette2.wikia.nocookie.net/minecraftpocketedition/images/1/17/IMG_3976.PNG/revision/latest?cb=20161125122418");
+    }
+    
+    span a.active{
+        background:#228B22;
+        color:black;
+        box-shadow:0 0 10px #7CFC00 0 0 30px #7CFC00;
+    }
+
+    span a:hover{
+        background:#32CD32;
+        color:black;
+        box-shadow:0 0 10px #32CD32, 0 0 40px #32CD32, 0 0 80px #32CD32;
+    }
+    
+
+    h1{
+        font-family:Comic Sans MS;
+        font-size:21;
+    }
+    p{
+        font-family:Calibri Light;
+        font-size:10;
+    }
+
+    footer{
+        background:black;
+        color:darkgrey;
+        line-height:3;
+        padding-bottom:0px;
+        overflow:hidden;
+        font-family:Calibri;    
+    }   
