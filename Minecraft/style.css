@@ -105,10 +105,6 @@ nav .logo {
     transition:0.2s;
     border-color:black;
 }
-    span{
-        background-image:url("https://vignette2.wikia.nocookie.net/minecraftpocketedition/images/1/17/IMG_3976.PNG/revision/latest?cb=20161125122418");
-    }
-    
     span a.active{
         background:#228B22;
         color:black;
